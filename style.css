@@ -1,0 +1,231 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Menu de navegação*/
+.container-nav{
+    display: flex;
+    position: fixed;
+    margin-top: 10px;
+    z-index: 2;
+}
+.container-nav img, .container-nav a{
+    height: 25px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+.carrinho{
+    position: fixed;
+    right: 20px;
+}
+.desejo{
+    position: fixed;
+    right: 60px;
+}
+.escuro{
+    position: fixed;
+    left: 80px;
+    z-index: 2;
+}
+.login{
+    position: fixed;
+    left: 51px;
+    z-index: 2;
+}
+.user{
+    position: fixed;
+    left: 20px;
+    z-index: 2;
+}
+#fundo{
+    position: fixed;
+    background-color: aliceblue;
+    width: 100%;
+    height: 50px;
+    top: -2px;
+    border: 2px solid black;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}
+.linhanavegacao{
+    display: block;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 2;
+}
+#titulonav{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+/*Produtos*/
+.container-produtos p{
+    text-shadow: 1px 1px 3px rgb(116, 116, 116);
+}
+#container-produtos button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(101, 179, 110);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px gray;
+}
+button a{ /*Botao global*/
+    text-decoration: none;
+    color: aliceblue;
+}
+.preco{
+    margin-top: -18px;
+}
+.linha1{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 110px;
+}
+.linha1 img, .linha2 img, .linha3 img, .linha4 img{
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+.linha1 img:hover, .linha2 img:hover, .linha3 img:hover, .linha4 img:hover{
+    transform: scale(1.4);
+    transition: 0.3s;
+    z-index: 3;
+}
+.linha2{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 180px;
+}
+.linha3{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 250px;
+}
+.linha4{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 320px;
+}
+/*Botao de inicio da pagina*/
+.botao{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    border: 1px rgb(0, 0, 0) solid;
+    height: 30px;
+    background-color: aliceblue;
+    z-index: 4;
+    width: 120px;
+}
+.botao p{
+    margin-top: 7px;
+    text-align: center;
+}
+.botao a{
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    text-shadow: 1px 1px 3px rgb(99, 99, 99);
+}
+/*Login*/
+.dividir{
+    display: block;
+}
+#loginpag{
+    z-index: 3;
+    position: relative;
+    margin-left: 890px;
+    width: 300px;
+    text-align: center;
+    top: 60px;
+    display: none;
+}
+#registerpag{
+    z-index: 3;
+    position: relative;
+    margin-left: 890px;
+    width: 300px;
+    text-align: center;
+    top: 60px;
+}
+#registerpag a{
+    text-decoration: none;
+    color: black;
+}
+#botaologin{
+    margin-top: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+}
+#botaoregistro{
+    margin-top: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+}
+#botaologin:hover, #botaoregistro:hover{
+    background-color: rgb(255, 217, 47);
+}
+#titulologin{
+    font-size: 30pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 4px gray;
+}
+#erro{
+    color: red;
+}
+.campo p{
+    text-shadow: 1px 1px 3px grey;
+}
+.campo{
+    border-radius: 20px;
+    height: 300px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 4px black;
+}
+.caixa{
+    border: 1px black solid;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+.imagem{
+    position: fixed;
+    height: 700px;
+    left: -250px;
+    z-index: 3;
+    top: -3px;
+}
+.foto{
+    height: 670px;
+    box-shadow: 3px 3px 6px rgb(49, 49, 49);
+    border: 2px solid rgb(0, 0, 0);
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+/*Footer, rodapé*/
+footer{
+    position: relative;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    padding: 20px;
+    font-size: 10pt;
+    margin-top: 400px;
+}
+.titulofooter{
+    text-align: center;
+}
+.conteudofooter{
+    margin-top: 40px;
+}

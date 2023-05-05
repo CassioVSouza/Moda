@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Section class="container-login">
+        <div class="dividir">
+            <div class="imagem">
+                <img class="foto" src="Assets/fotofundo.jpeg" alt="">
+            </div>
+            <div id="loginpag">
+                <p id="titulologin">PLACEHOLDER MODA</p>
+                <p>Entre na sua conta!</p>
+                <form action="">
+                    <fieldset class="campo">
+                        <p><label for="nome">Nome</label></p>
+                        <input class="caixa" id="nome" name="login" type="text" maxlength="15" required>
+                        <p><label for="senha">Senha</label></p>
+                        <input class="caixa" id="senha" name="login" type="password" minlength="4" maxlength="12" required> <br>
+                        <p id="erro"></p>
+                        <input type="button" name="login" value="Entrar" id="botaologin">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="registerpag">
+                <p id="titulologin">PLACEHOLDER MODA</p>
+                <p>Registre sua conta!</p>
+                <form action="">
+                    <fieldset class="campo">
+                        <p><label for="nome">Nome</label></p>
+                        <input class="caixa" id="nomeregistro" name="login" type="text" maxlength="15" required>
+                        <p><label for="senha">Senha</label></p>
+                        <input class="caixa" id="senharegistro" name="login" type="password" minlength="4" maxlength="12" required> <br>
+                        <p id="erro"></p>
+                        <input type="button" name="login" value="Entrar" id="botaoregistro">
+                        <p><a id="jatenhoconta" href="#">Já tenho uma conta!</a></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </Section>
+    <script src="script.js"></script>
+</body>
+</html>
