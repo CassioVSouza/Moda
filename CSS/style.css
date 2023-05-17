@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+header{
+    background-image: url(Assets/backgroundcell.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 630px;
+}
+/*Header, Nav*/
+nav > div{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+.PlaceHolder{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 15pt;
+}
+.ModaNav{
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    position: relative;
+    transform: rotate(350deg);
+    top: -10px;
+    font-size: 12pt;
+}
+.Menu{
+    margin: 2% 2% 0% 2%;
+    font-size: 11pt;
+}
+.Menu a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/*Corpo*/
+.Frase{
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+    position: relative;
+    top: 170px;
+    margin-left: 2%;
+}
+/*Loja*/
+.Loja{
+    height: 100%;
+}
+.Loja img{
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 1%;
+}
+.Loja > div > div{
+    height: 50px;
+    display: flex;
+}
+.Loja p{
+    margin: auto;
+}

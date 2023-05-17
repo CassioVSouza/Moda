@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+nav > div{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+.PlaceHolder{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 15pt;
+}
+.ModaNav{
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    position: relative;
+    transform: rotate(350deg);
+    top: -10px;
+    font-size: 12pt;
+}
+.Menu{
+    margin: 2% 2% 0% 2%;
+    font-size: 11pt;
+}
+.Menu a{
+    text-decoration: none;
+    color: aliceblue;
+}
