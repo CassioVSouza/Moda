@@ -51,6 +51,9 @@ nav > div{
     left: 10px;
     top: 10px;
 }
+.MenuE:hover{
+    cursor: pointer;
+}
 .MenuL{
     position: fixed;
     right: 10px;
@@ -126,7 +129,43 @@ input{
 #BackButton{
     color: black;
     font-weight: 900;
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 2%;
 }
 #BuyP{
     display: none;
+}
+/*Carrinho*/
+#Carrinho{
+    display: none;
+    position: fixed;
+    background-color: rgb(253, 253, 253);
+    height: 430px;
+    width: 200px;
+    z-index: 2;
+    top: 0;
+    border-radius: 0px 0px 10px 0px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#Carrinho p{
+    position: relative;
+    text-align: center;
+    top: 5px;
+}
+#InsideCart h3{
+    margin-top: 25%;
+    text-align: center;
+}
+#InsideCart{
+    height: 370px;
+    overflow: auto;
+    border-bottom: 1px solid black;
+}
+#InsideCart hr{
+    margin-top: 4%;
+}
+.ButtonBuy{
+    border-radius: 20px;
 }

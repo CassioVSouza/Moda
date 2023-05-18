@@ -11,7 +11,7 @@
         <header>
             <nav>
                 <div>
-                    <p class="MenuE">CART(0)</p>
+                    <p class="MenuE" onclick="ShowCart()">CART(<span id="CountCart"></span>)</p>
                     <h1 class="PlaceHolder"><a href="index.html">PlaceHolder</a></h1>
                     <p class="MenuL">LOG-IN</p>
                 </div>
@@ -19,86 +19,96 @@
             </nav>
         </header>
         <main id="Store">
-            <img class="ImgLoja" src="Assets/imglojacell.jpg" alt="">
-            <h1 class="TitleLoja">CLOTHES</h1>
-            <p class="SobreCollection">Exploring the vast universe of Maison Jean Paul Gaultier and drawing inspiration from its 2000s archives, here it is, the new Spring–Summer 2023 collection.</p>
-            <section class="Loja">
-                <div>
-                    <img onclick="ShowStore(0)" src="Assets/modelo1.jpg" alt="">
-                    <div class="infos">
-                        <p id="pNome1"></p>
-                        <p>R$<span id="pPreco1"></span></p>
+            <section id="hide">
+                <img class="ImgLoja" src="Assets/imglojacell.jpg" alt="">
+                <h1 class="TitleLoja">CLOTHES</h1>
+                <p class="SobreCollection">Exploring the vast universe of Maison Jean Paul Gaultier and drawing inspiration from its 2000s archives, here it is, the new Spring–Summer 2023 collection.</p>
+                <section class="Loja">
+                    <div>
+                        <img onclick="ShowStore(0)" src="Assets/modelo1.jpg" alt="">
+                        <div class="infos">
+                            <p id="pNome1"></p>
+                            <p>R$<span id="pPreco1"></span></p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img onclick="ShowStore(1)" src="Assets/modelo2.jpg" alt="">
-                    <div class="infos">
-                        <p id="pNome2"></p>
-                        <p>R$<span id="pPreco2"></span></p>
+                    <div>
+                        <img onclick="ShowStore(1)" src="Assets/modelo2.jpg" alt="">
+                        <div class="infos">
+                            <p id="pNome2"></p>
+                            <p>R$<span id="pPreco2"></span></p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img onclick="ShowStore(2)" src="Assets/modelo3.jpg" alt="">
-                    <div class="infos">
-                        <p id="pNome3"></p>
-                        <p>R$<span id="pPreco3"></span></p>
+                    <div>
+                        <img onclick="ShowStore(2)" src="Assets/modelo3.jpg" alt="">
+                        <div class="infos">
+                            <p id="pNome3"></p>
+                            <p>R$<span id="pPreco3"></span></p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img onclick="ShowStore(3)" src="Assets/model4.jpg" alt="">
-                    <div class="infos">
-                        <p id="pNome4"></p>
-                        <p>R$<span id="pPreco4"></span></p>
+                    <div>
+                        <img onclick="ShowStore(3)" src="Assets/model4.jpg" alt="">
+                        <div class="infos">
+                            <p id="pNome4"></p>
+                            <p>R$<span id="pPreco4"></span></p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img onclick="ShowStore(4)" src="Assets/model5.jpg" alt="">
-                    <div class="infos">
-                        <p id="pNome5"></p>
-                        <p>R$<span id="pPreco5"></span></p>
+                    <div>
+                        <img onclick="ShowStore(4)" src="Assets/model5.jpg" alt="">
+                        <div class="infos">
+                            <p id="pNome5"></p>
+                            <p>R$<span id="pPreco5"></span></p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img onclick="ShowStore(5)" src="Assets/model6.jpg" alt="">
-                    <div class="infos">
-                        <p id="pNome6"></p>
-                        <p>R$<span id="pPreco6"></span></p>
+                    <div>
+                        <img onclick="ShowStore(5)" src="Assets/model6.jpg" alt="">
+                        <div class="infos">
+                            <p id="pNome6"></p>
+                            <p>R$<span id="pPreco6"></span></p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img onclick="ShowStore(6)" src="Assets/modelo7.jpeg" alt="">
-                    <div class="infos">
-                        <p id="pNome7"></p>
-                        <p>R$<span id="pPreco7"></span></p>
+                    <div>
+                        <img onclick="ShowStore(6)" src="Assets/modelo7.jpeg" alt="">
+                        <div class="infos">
+                            <p id="pNome7"></p>
+                            <p>R$<span id="pPreco7"></span></p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img onclick="ShowStore(7)" src="Assets/modelo8.jpg" alt="">
-                    <div class="infos">
-                        <p id="pNome8"></p>
-                        <p>R$<span id="pPreco8"></span></p>
+                    <div>
+                        <img onclick="ShowStore(7)" src="Assets/modelo8.jpg" alt="">
+                        <div class="infos">
+                            <p id="pNome8"></p>
+                            <p>R$<span id="pPreco8"></span></p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img onclick="ShowStore(8)" src="Assets/modelo9.jpg" alt="">
-                    <div class="infos">
-                        <p id="pNome9"></p>
-                        <p>R$<span id="pPreco9"></span></p>
+                    <div>
+                        <img onclick="ShowStore(8)" src="Assets/modelo9.jpg" alt="">
+                        <div class="infos">
+                            <p id="pNome9"></p>
+                            <p>R$<span id="pPreco9"></span></p>
+                        </div>
                     </div>
+                </section>
+            </section>
+            <section id="BuyP">
+                <img id="imgP" src="" alt="">
+                <div>
+                    <h2 class="infos"><span id="Nome"></span></h2>
+                    <p class="infos">R$<span id="Preco"></span></p>
                 </div>
+                <input type="button" value="ADD TO CAR" onclick="Buy()">
+                <p class="Extras">Free returns</p>
+                <p class="Extras">Secured Payment</p>
+                <p class="Extras" id="BackButton" onclick="ShowStore()">Back to the store</p>
+            </section>
+            <section id="Carrinho">
+                <div id="InsideCart">
+                    <h3>Cart</h3>
+                    <hr>
+                </div>
+                <p>Total: <span id="Total"></span></p>
+                <input class="ButtonBuy" type="button" value="Comprar">
             </section>
         </main>
-        <section id="BuyP">
-            <img id="imgP" src="" alt="">
-            <div>
-                <h2 class="infos"><span id="Nome"></span></h2>
-                <p class="infos">R$<span id="Preco"></span></p>
-            </div>
-            <input type="button" value="ADD TO CAR">
-            <p class="Extras">Free returns</p>
-            <p class="Extras">Secured Payment</p>
-            <p class="Extras" id="BackButton" onclick="ShowStore()">Back to the store</p>
-        </section>
         <footer>
 
         </footer>
