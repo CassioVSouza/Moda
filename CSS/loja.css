@@ -31,7 +31,7 @@ nav > div{
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 15pt;
 }
-.PlaceHolder a{
+.PlaceHolder a, .ModaNav a{
     text-decoration: none;
     color: black;
 }
@@ -142,7 +142,7 @@ input{
     position: fixed;
     background-color: rgb(253, 253, 253);
     height: 430px;
-    width: 200px;
+    width: 230px;
     z-index: 2;
     top: 0;
     border-radius: 0px 0px 10px 0px;
@@ -168,4 +168,40 @@ input{
 }
 .ButtonBuy{
     border-radius: 20px;
+}
+/*Pop Up*/
+#PopUp{
+    display: none;
+    height: 100px;
+    width: 200px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#PopUp p{
+    display: block;
+    margin-top: 14%;
+    text-align: center;
+}
+/*Footer*/
+footer{
+    background-color: black;
+    color: gray;
+    font-size: 10pt;
+}
+footer p{
+    margin-top: 2%;
+}
+.copy{
+    margin-top: 2%;
+    text-align: center;
+}
+.pTop{
+    padding-top: 2%;
 }

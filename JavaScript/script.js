@@ -9,6 +9,8 @@ let CountCart = 0;
 let pCurrent = 0;
 let pPCurrent = 0;
 let Total = 0;
+let IndexImg = 0;
+let TimeOutPopUp;
 
 //Load Products Name
 PreLoadP();
@@ -30,6 +32,40 @@ function ShowStore(params){
     }
 }
 
+function Bought(){
+    for(var i = 0; i < CountCart; i++){
+        document.getElementById('pCarts').remove();
+        document.getElementById('pCarts').remove();
+    }
+    Total = 0;
+    CountCart = 0;
+    TimeOutPopUp = setTimeout(PopUp, 3000);
+    Cart = false;
+    document.getElementById('PopUp').style.display = 'block'
+    document.getElementById('Total').innerHTML = '';
+    document.getElementById('CountCart').innerHTML = CountCart;
+    document.getElementById('Carrinho').style.display = 'none';
+}
+function PopUp(){
+    document.getElementById('PopUp').style.display = 'none'
+}
+
+function ChangeImgMore(){
+    if(IndexImg >= 4){
+        IndexImg = -1;
+    }    
+    IndexImg += 1;
+    document.getElementById('ChangeImg').src = pImg[IndexImg];
+}
+function ChangeImgLess(){
+    if(IndexImg <= 0){
+        IndexImg = 5;
+    }    
+    IndexImg -= 1;
+    document.getElementById('ChangeImg').src = pImg[IndexImg];
+}
+
+
 function ShowCart(){
     if(Cart == false){
         document.getElementById('Carrinho').style.display = 'block';
@@ -43,13 +79,15 @@ function ShowCart(){
 function Buy(){
     var Product = document.createElement('p');
     var Lines = document.createElement('hr');
-    Product.innerHTML = pCurrent + ' ' + pPCurrent;
+    Product.innerHTML = pCurrent + ' | ' + `R$${pPCurrent}`;
     Total = Total + pPCurrent;
     CountCart += 1;
     document.getElementById('InsideCart').appendChild(Product);
     document.getElementById('InsideCart').appendChild(Lines);
     document.getElementById('CountCart').innerHTML = CountCart;
-    document.getElementById('Total').innerHTML = Total.toFixed(2);
+    document.getElementById('Total').innerHTML = `R$${Total.toFixed(2)}`;
+    Product.setAttribute('id', 'pCarts');
+    Lines.setAttribute('id', 'pCarts');
 }
 
 function PreLoadP(){

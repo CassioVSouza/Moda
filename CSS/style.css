@@ -10,6 +10,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
+    background-color: black;
 }
 header{
     background-image: url(backgroundcell.jpg);
@@ -55,18 +56,52 @@ nav > div{
 }
 /*Loja*/
 .Loja{
-    height: 100%;
+    height: 99%;
 }
 .Loja img{
     width: 100%;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
-    margin-top: 1%;
-}
-.Loja > div > div{
-    height: 50px;
-    display: flex;
 }
 .Loja p{
-    margin: auto;
+    position: absolute;
+    user-select: none;
+}
+.Left{
+    left: 0;
+    font-size: 40pt;
+    color: rgba(128, 128, 128, 0.486);
+    bottom: 0;
+    bottom: -350px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.37);
+}
+.Right{
+    right: 0;
+    font-size: 40pt;
+    color: rgba(128, 128, 128, 0.486);
+    bottom: -350px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.37);
+}
+.Right:hover, .Left:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.301);
+    color: aliceblue;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+/*Footer*/
+footer{
+    background-color: black;
+    color: gray;
+    font-size: 10pt;
+}
+footer p{
+    margin-top: 2%;
+}
+.copy{
+    margin-top: 2%;
+    text-align: center;
+}
+.pTop{
+    padding-top: 2%;
 }
