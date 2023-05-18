@@ -12,10 +12,10 @@ body{
     font-weight: 900;
 }
 header{
-    background-image: url(Assets/backgroundcell.jpg);
+    background-image: url(backgroundcell.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 630px;
+    height: 670px;
 }
 /*Header, Nav*/
 nav > div{
@@ -50,7 +50,7 @@ nav > div{
     font-family: 'Oswald', sans-serif;
     color: aliceblue;
     position: relative;
-    top: 170px;
+    top: 200px;
     margin-left: 2%;
 }
 /*Loja*/

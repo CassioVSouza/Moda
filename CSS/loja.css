@@ -31,6 +31,10 @@ nav > div{
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 15pt;
 }
+.PlaceHolder a{
+    text-decoration: none;
+    color: black;
+}
 .ModaNav{
     color: rgb(3, 3, 3);
     display: block;
@@ -86,4 +90,43 @@ nav > div{
 }
 .Loja p{
     margin: auto;
+}
+/*Buy Product*/
+#BuyP img{
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+#BuyP div{
+    display: flex;
+}
+.infos{
+    margin: auto;
+    font-size: 12pt;
+}
+input{
+    display: block;
+    margin: 4% auto 4% auto;
+    height: 30px;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 0;
+}
+.Extras{
+    margin-left: 2%;
+    font-size: 10pt;
+    color: rgb(131, 131, 131);
+}
+#BackButton:hover{
+    cursor: pointer;
+}
+#BackButton{
+    color: black;
+    font-weight: 900;
+}
+#BuyP{
+    display: none;
 }
