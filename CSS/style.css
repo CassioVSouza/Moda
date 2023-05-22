@@ -63,6 +63,9 @@ nav > div{
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
+.ImgPC{
+    display: none;
+}
 .Loja p{
     position: absolute;
     user-select: none;
@@ -104,4 +107,35 @@ footer p{
 }
 .pTop{
     padding-top: 2%;
+}
+/*Para pc*/
+@media screen and (min-width: 768px) {
+    a{
+        text-decoration: none;
+    }
+    header{
+        background-image: url(background.jpg);
+    }
+    .Loja img{
+        width: 100%;
+    }
+    .ModaNav{
+        top: -26px;
+    }
+    .Loja img:hover{
+        filter: brightness(70%);
+        transition: 0.5s ease-in-out;
+    }
+    .ImgPC{
+        display: inline-block;
+    }
+    .Left, .Right{
+        display: none;
+    }
+    .centralizar{
+        display: flex;
+    }
+    footer p{
+        text-align: center;
+    }
 }

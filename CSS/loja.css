@@ -65,6 +65,9 @@ nav > div{
     width: 100%;
     border-bottom: 1px solid black;
 }
+.ImgLojaPC{
+    display: none;
+}
 .TitleLoja{
     font-family: 'Oswald', sans-serif;
 }
@@ -87,7 +90,7 @@ nav > div{
     filter: brightness(70%);
     transition: 0.5s ease-in-out;
 }
-.Loja > div > div{
+.Loja > div > div > div{
     height: 50px;
     display: flex;
 }
@@ -204,4 +207,57 @@ footer p{
 }
 .pTop{
     padding-top: 2%;
+}
+@media screen and (min-width: 768px) {
+    .ImgLoja{
+        display: none;
+    }
+    .ImgLojaPC{
+        display: block;
+        width: 100%;
+    }
+    .line1{
+        display: flex;
+    }
+    .line1 div{
+        width: 25%;
+    }
+    .Loja > div > div > div{
+        height: 50px;
+        display: flex;
+        width: 100%;
+    }
+    .Loja > div > div{
+        height: 100%;
+    }
+    .line2{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    .line2 div{
+        width: 50%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    #BuyP{
+        position: relative;
+        width: 30%;
+        margin: auto;
+    }
+    #BuyP img{
+        margin-top: 10%;
+    }
+    .PlaceHolder{
+        position: fixed;
+        text-align: center;
+        left: 45%;
+    }
+    .ModaNav{
+        position: relative;
+        left: -1%;
+    }
+    footer p{
+        text-align: center;
+    }
 }
