@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    background-image: url(backcelllogin.jpg);
+    background-size: cover;
+}
+/*Login body*/
+h1{
+    font-weight: 900;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-weight: 100;
+}
+/*Login*/
+#container-login{
+    width: 80%;
+    height: 100%;
+    padding-bottom: 5%;
+    background-color: rgb(255, 255, 255);
+    margin: 20% auto;
+}
+#container-login div{
+    margin: 5% 5% 5% 5%;
+}
+input{
+    height: 40px;
+    width: 100%;
+    margin-top: 7%;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+.LoginButton{
+    background-color: black;
+    color: white;
+}
+.Logando{
+    font-weight: 900;
+}
+span:hover{
+    cursor: pointer;
+}
+/*Registro*/
+#container-register{
+    display: none;
+    width: 80%;
+    height: 100%;
+    padding-bottom: 5%;
+    background-color: rgb(255, 255, 255);
+    margin: 10% auto;
+}
+#container-register div{
+    margin: 5% 5% 5% 5%;
+}
+.check{
+    width: 5%;
+}
+.terms{
+    position: relative;
+    top: -15px;
+    font-size: 10pt;
+}
+.minidesc{
+    font-size: 10pt;
+}
+@media screen and (min-width: 768px){
+    body{
+        background-image: url(backlogin.jpg);
+    }
+    #container-login{
+        position: relative;
+        width: 23%;
+        left: -15%;
+        top: 80px;
+        height: 100%;
+        padding-bottom: 3%;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+    }
+    #container-register{
+        position: relative;
+        width: 21%;
+        left: -15%;
+        top: 10px;
+        height: 100%;
+        padding-bottom: 3%;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+    }
+    #container-register div{
+        margin: 3% 3% 3% 3%;
+    }
+}

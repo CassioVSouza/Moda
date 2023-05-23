@@ -31,6 +31,10 @@ nav > div{
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 15pt;
 }
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
 .PlaceHolder a, .ModaNav a{
     text-decoration: none;
     color: black;

@@ -1,49 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
-    <Section class="container-login">
-        <div class="dividir">
-            <div class="imagem">
-                <img class="foto" src="Assets/fotofundo.jpeg" alt="">
-            </div>
-            <div id="loginpag">
-                <p id="titulologin">PLACEHOLDER MODA</p>
-                <p>Entre na sua conta!</p>
-                <form action="">
-                    <fieldset class="campo">
-                        <p><label for="nome">Nome</label></p>
-                        <input class="caixa" id="nome" name="login" type="text" maxlength="15" required>
-                        <p><label for="senha">Senha</label></p>
-                        <input class="caixa" id="senha" name="login" type="password" minlength="4" maxlength="12" required> <br>
-                        <p id="erro"></p>
-                        <input type="button" name="login" value="Entrar" id="botaologin">
-                    </fieldset>
-                </form>
-            </div>
-            <div id="registerpag">
-                <p id="titulologin">PLACEHOLDER MODA</p>
-                <p>Registre sua conta!</p>
-                <form action="">
-                    <fieldset class="campo">
-                        <p><label for="nome">Nome</label></p>
-                        <input class="caixa" id="nomeregistro" name="login" type="text" maxlength="15" required>
-                        <p><label for="senha">Senha</label></p>
-                        <input class="caixa" id="senharegistro" name="login" type="password" minlength="4" maxlength="12" required> <br>
-                        <p id="erro"></p>
-                        <input type="button" name="login" value="Entrar" id="botaoregistro">
-                        <p><a id="jatenhoconta" href="#">Já tenho uma conta!</a></p>
-                    </fieldset>
-                </form>
-            </div>
+    <section id="container-login">
+        <div><p>&NonBreakingSpace;</p></div>
+        <div>
+            <h1>MY<br>ACCOUNT</h1>
+            <h2><span class="Logando">LOGIN</span> | <span id="register">REGISTER</span></h2>
+            <form action="">
+                <input type="email" placeholder="EMAIL*" required id="EmailT"> <br>
+                <input type="password" placeholder="PASSWORD*" required id="PasswordT"> <br>
+                <input class="LoginButton" type="button" value="LOGIN" id="ConfirmLogin">
+            </form>
         </div>
-    </Section>
-    <script src="JavaScript/script.js"></script>
+    </section>
+    <section id="container-register">
+        <div><p>&NonBreakingSpace;</p></div>
+        <div>
+            <h1>MY<br>ACCOUNT</h1>
+            <h2><span id="login">LOGIN</span> | <span class="Logando">REGISTER</span></h2>
+            <form action="">
+                <input type="text" placeholder="FIRST NAME*" required> <br>
+                <input type="text" placeholder="LAST NAME*" required> <br>
+                <input type="email" placeholder="EMAIL*" required id="emailinput"> <br>
+                <input type="password" placeholder="PASSWORD*" required id="inputpassword"> <br>
+                <p class="minidesc">Please, at least 5 characters.</p>
+                <input type="password" placeholder="PASSWORD CONFIRMATION*" required id="ConfirmP"> <br>
+                <input type="date" name="" id=""> <br>
+                <input class="check" type="checkbox" name="checkemail" id="checkinput"> <span class="terms">Receive our newsletter</span> <br>
+                <input class="check" type="checkbox" name="checkemail" id="checkinput" required> <span class="terms">Agree the Terms And Politics</span> <br>
+                <input class="LoginButton" type="button" value="LOGIN" id="ConfirmRegister">
+            </form>
+        </div>
+    </section>
+    <script src="JavaScript/login.js"></script>
 </body>
 </html>
